@@ -12,10 +12,7 @@ class User
   end
 
   def show(target)
-    # want = target[:params]
-    # wanted = want[:id].to_i
     user = USERS_LIST[target[:params][:id].to_i-1]
-
     return user.to_json
   end
 
