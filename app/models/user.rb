@@ -8,11 +8,7 @@ class User
   end
 
   def all
-    the_list = []
-    USERS_LIST.each do |x|
-      the_list << "Name: #{x[:first_name]} #{x[:last_name]}   Age: #{x[:age]}"
-    end
-    return the_list.to_json
+    USERS_LIST.to_json
   end
 
   def show(target)
