@@ -16,8 +16,10 @@ class Router
     #
     # Put your routes in this array using the get, post, put, delete methods below. (remember order matters)
     [
-
+      get('/users/:id', UsersController, :show),
+      get('/users', UsersController, :index)
     ].find(&:itself)
+
   end
 
   private # No need to edit these, but feel free to read them to see how they work
