@@ -20,13 +20,4 @@ class User
     return "Not Found".to_json
   end
 
-  def as_json
-    {
-      first_name: @first_name,
-      last_name: @last_name,
-      age: @age,
-      id:  @id
-    }.to_json
-  end
-
 end
